@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    color: #333; /* Cor do texto principal */
+    margin: 20px;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3; /* Azul para o título */
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 10px;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0056b3;
+    padding: 0 10px;
+    margin-left: -5px;
+    border-bottom: none; /* Remove a linha de baixo padrão */
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+select,
+textarea {
+    width: calc(100% - 12px); /* Largura total menos o padding */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Estilo específico para grupos de rádio/checkbox (gênero, contato, stacks) */
+fieldset > label {
+    display: block; /* Garante que a label principal da seção ocupe a linha toda */
+    margin-bottom: 10px;
+}
+
+/* Ajuste para inputs em linha (como Gênero e Stacks) */
+.idioma-container, .idioma-grupo {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 15px; /* Espaço entre os elementos */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.idioma-grupo select {
+    width: auto; /* Deixa o select do idioma ter uma largura automática */
+    flex-grow: 1; /* Permite que o select cresça para preencher o espaço */
+    max-width: 250px;
+}
+
+/* Remove a largura 100% para elementos inline que estão agrupados */
+.idioma-grupo label {
+    font-weight: normal; /* Labels internas podem ser menos fortes */
+    margin-right: 5px;
+}
+
+/* Estilo para a área de texto */
+textarea {
+    resize: vertical; /* Permite redimensionamento vertical */
+    min-height: 100px;
+}
+
+/* Estilo para campos de endereço em linha */
+#logradouro, #numero, #complemento, #bairro, #cidade, #uf, #cep {
+    width: auto;
+    max-width: 90%; /* Limite para não ficar muito largo */
+    margin-right: 10px;
+}
+
+/* Media Query para responsividade básica (opcional, mas recomendado) */
+@media (max-width: 600px) {
+    form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"],
+    input[type="number"],
+    select,
+    textarea {
+        width: 100%; /* Ocupa a largura total em telas pequenas */
+    }
+
+    .idioma-container, .idioma-grupo {
+        flex-direction: column; /* Coloca os elementos do idioma um abaixo do outro */
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .idioma-grupo select {
+        width: 100%;
+        max-width: none;
+    }
+}

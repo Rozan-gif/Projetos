@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidatura - Vaga de TI</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1>Formulário de Candidatura - Vagas de TI</h1>
+    </header>
+
+    <main class="container">
+        
+        <form id="candidatura-form" action="#" method="post" validate>
+
+            
+            <fieldset>
+                <legend><h4>A. Dados Pessoais</h4></legend>
+
+                <div class="form-group">
+                    <label for="nome-completo">Nome Completo: </label>
+                    <input type="text" required id="nome-completo" name="nome-completo"  placeholder="Seu nome e sobrenome">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" required id="data-nascimento" name="data-nascimento">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="cpf-documento">CPF / Documento:</label>
+                    <input type="text" required id="cpf-documento" name="cpf-documento" placeholder="Apenas números ou formato padrão">
+                </div></br>
+
+                <div class="form-group radio-group">
+                    <label>Gênero:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="genero-f" name="genero" required value="feminino" >
+                        <label for="genero-f">Feminino</label>
+                        <input type="radio" id="genero-m" name="genero" required value="masculino">
+                        <label for="genero-m">Masculino</label>
+                        <input type="radio" id="genero-o" name="genero" required value="outro">
+                        <label for="genero-o">Outro</label>
+                        <input type="radio" id="genero-n" name="genero" required value="nao-informar">
+                        <label for="genero-n">Prefiro não informar</label>
+                    </div>
+                </div><br>
+
+                
+                <h3 class="sub-section-title">Endereço:</h3>
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="logradouro">Logradouro:</label>
+                        <input type="text" id="logradouro" name="logradouro" required placeholder="Rua, Avenida, etc.">
+                    </div></br>
+                    <div class="form-group small-input">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required placeholder="Ex: 123">
+                    </div></br>
+                    <div class="form-group small-input">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento" required placeholder="Apto, Bloco">
+                    </div></br>
+                </div>
+
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro" required placeholder="Ex: Laranjeiras">
+                    </div></br>
+                    <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" required placeholder="Ex: Salvador">
+                    </div></br>
+                    <div class="form-group small-input">
+                        <label for="uf">UF:</label>
+                        <select id="uf" name="uf">
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="AC">AC</option><option value="AL">AL</option><option value="AP">AP</option><option value="AM">AM</option>
+                            <option value="BA">BA</option><option value="CE">CE</option><option value="DF">DF</option><option value="ES">ES</option>
+                            <option value="GO">GO</option><option value="MA">MA</option><option value="MT">MT</option><option value="MS">MS</option>
+                            <option value="MG">MG</option><option value="PA">PA</option><option value="PB">PB</option><option value="PR">PR</option>
+                            <option value="PE">PE</option><option value="PI">PI</option><option value="RJ">RJ</option><option value="RN">RN</option>
+                            <option value="RS">RS</option><option value="RO">RO</option><option value="RR">RR</option><option value="SC">SC</option>
+                            <option value="SP">SP</option><option value="SE">SE</option><option value="TO">TO</option>
+                        </select>
+                    </div></br>
+                    <div class="form-group small-input">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                    </div>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>B. Contato</h4></legend>
+
+                <div class="form-group">
+                    <label for="email">E-mail: </span></label>
+                    <input type="email" id="email" name="email" required  placeholder="seunome@exemplo.com">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="celular">Telefone Celular: </span></label>
+                    <input type="tel" id="celular" name="celular" required  placeholder="(99) 99999-9999">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="telefone-fixo">Telefone Fixo:</label>
+                    <input type="tel" id="telefone-fixo" name="telefone-fixo" placeholder="(99) 9999-9999">
+                </div></br>
+
+                <div class="form-group radio-group">
+                    <label>Preferência de Contato:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="pref-email" name="pref-contato" value="email">
+                        <label for="pref-email">E-mail</label>
+                        <input type="radio" id="pref-celular" name="pref-contato" value="celular">
+                        <label for="pref-celular">Celular</label>
+                        <input type="radio" id="pref-whatsapp" name="pref-contato" value="whatsapp">
+                        <label for="pref-whatsapp">WhatsApp</label>
+                    </div></br>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>C. Perfis & Portfólio (Links)</h4></legend>
+
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn (URL):</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/seuperfil">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="github">GitHub/GitLab (URL):</label>
+                    <input type="url" id="github" name="github" placeholder="https://github.com/seuperfil">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="portfolio">Portfólio/Site Pessoal (URL):</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://seu-portfolio.com">
+                </div></br>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>D. Vaga & Disponibilidade</h4></legend>
+
+                <div class="form-group">
+                    <label for="cargo-pretendido">Cargo Pretendido:</label>
+                    <select id="cargo-pretendido" name="cargo-pretendido">
+                        <option value="" disabled selected>Selecione uma opção</option>
+                        <option value="frontend">Desenvolvedor Front-end</option>
+                        <option value="backend">Desenvolvedor Back-end</option>
+                        <option value="fullstack">Desenvolvedor Full-stack</option>
+                        <option value="qa">QA/Testes</option>
+                        <option value="devops">DevOps/Cloud</option>
+                        <option value="data">Data/ML</option>
+                        <option value="uxui">UX/UI Design</option>
+                        <option value="suporte">Suporte Técnico</option>
+                        <option value="estagio">Estágio</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div></br>
+
+                <div class="form-group">
+                    <label for="senioridade">Senioridade:</label>
+                    <select id="senioridade" name="senioridade">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="junior">Júnior</option>
+                        <option value="pleno">Pleno</option>
+                        <option value="senior">Sênior</option>
+                        <option value="especialista">Especialista</option>
+                    </select>
+                </div></br>
+
+                <div class="form-group radio-group">
+                    <label>Modelo de Trabalho:</label>
+                    <div class="radio-options">
+                        <input type="radio" id="modelo-remoto" name="modelo-trabalho" value="remoto">
+                        <label for="modelo-remoto">Remoto</label>
+                        <input type="radio" id="modelo-hibrido" name="modelo-trabalho" value="hibrido">
+                        <label for="modelo-hibrido">Híbrido</label>
+                        <input type="radio" id="modelo-presencial" name="modelo-trabalho" value="presencial">
+                        <label for="modelo-presencial">Presencial</label>
+                    </div>
+                </div></br>
+
+                <div class="form-group checkbox-group">
+                    <label>Jornada de Trabalho:</label>
+                    <div class="checkbox-options">
+                        <input type="checkbox" id="jornada-40h" name="jornada" value="40h">
+                        <label for="jornada-40h">40h semanais (Full-time)</label>
+
+                        <input type="checkbox" id="jornada-30h" name="jornada" value="30h">
+                        <label for="jornada-30h">30h semanais (Part-time)</label>
+
+                        <input type="checkbox" id="jornada-freelancer" name="jornada" value="freelancer">
+                        <label for="jornada-freelancer">Freelancer/Projeto</label>
+                    </div>
+                </div></br>
+
+                <div class="form-group">
+                    <label for="disponibilidade-inicio">Disponibilidade para Início:</label>
+                    <input type="date" id="disponibilidade-inicio" name="disponibilidade-inicio">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="pretensao-salarial">Pretensão Salarial (R$):</label>
+                    <input type="number" id="pretensao-salarial" name="pretensao-salarial" min="1000" step="100" placeholder="Ex: R$5000">
+                </div></br>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>E. Formação Acadêmica</h4></legend>
+
+                <div class="form-group">
+                    <label for="nivel-formacao">Nível de Formação:</label>
+                    <select id="nivel-formacao" name="nivel-formacao">
+                        <option value="" disabled selected>Selecione</option>
+                        <option value="tecnico">Técnico</option>
+                        <option value="tecnologo">Tecnólogo</option>
+                        <option value="bacharelado">Bacharelado</option>
+                        <option value="pos">Pós-Graduação/Especialização</option>
+                        <option value="mestrado">Mestrado</option>
+                        <option value="doutorado">Doutorado</option>
+                    </select>
+                </div></br>
+
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso" placeholder="Nome do curso">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="instituicao">Instituição:</label>
+                    <input type="text" id="instituicao" name="instituicao" placeholder="Nome da instituição de ensino">
+                </div></br>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="cursando" name="cursando">   
+                    <label for ="cursando"> Cursando </label>
+                </div><br>
+
+                <div class="form-group small-input">
+                    <label for="ano-conclusao">Ano de Conclusão:</label>
+                    <input type="number" id="ano-conclusao" name="ano-conclusao" min="1950" max="2030" placeholder="Ex: 2022">
+                </div></br>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>F. Experiência Profissional (Último Cargo)</h4></legend>
+
+                <div class="form-group">
+                    <label for="ult-empresa">Última Empresa:</label>
+                    <input type="text" id="ult-empresa" name="ult-empresa" placeholder="Nome da empresa">
+                </div></br>
+
+                <div class="form-group">
+                    <label for="ult-cargo">Cargo:</label>
+                    <input type="text" id="ult-cargo" name="ult-cargo" placeholder="Seu último ou atual cargo">
+                </div></br>
+
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="periodo-inicio">Início:</label>
+                        <input type="date" id="periodo-inicio" name="periodo-inicio">
+                    </div></br>
+
+                    <div class="form-group">
+                        <label for="periodo-fim">Fim:</label>
+                        <input type="date" id="periodo-fim" name="periodo-fim">
+                    </div></br>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="emprego-atual" name="emprego-atual">
+                    <label for="emprego-atual">Atualmente trabalho nesta empresa</label>
+                </div></br>
+
+                <div class="form-group">
+                    <label for="principais-resp">Principais Responsabilidades:</label></br>
+                    <textarea id="principais-resp" name="principais-resp" rows="5" placeholder="Descreva brevemente suas principais responsabilidades e conquistas."></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend><h4>G. Competências Técnicas (Hard Skills)</h4></legend>
+                <p class="section-description">Selecione as tecnologias com as quais você tem experiência:</p>
+                <div class="checkbox-grid">
+                    
+                    <input type="checkbox" id="skill-html" name="skills" value="HTML"><label for="skill-html">HTML</label>
+                    <input type="checkbox" id="skill-css" name="skills" value="CSS"><label for="skill-css">CSS</label>
+                    <input type="checkbox" id="skill-js" name="skills" value="JS/TS"><label for="skill-js">JS/TS</label>
+                    <input type="checkbox" id="skill-react" name="skills" value="React"><label for="skill-react">React</label>
+                    <input type="checkbox" id="skill-angular" name="skills" value="Angular"><label for="skill-angular">Angular</label>
+                    <input type="checkbox" id="skill-vue" name="skills" value="Vue"><label for="skill-vue">Vue.js</label>
+                    
+                    <input type="checkbox" id="skill-node" name="skills" value="Node.js"><label for="skill-node">Node.js</label>
+                    <input type="checkbox" id="skill-java" name="skills" value="Java"><label for="skill-java">Java</label>
+                    <input type="checkbox" id="skill-csharp" name="skills" value="C#"><label for="skill-csharp">C# / .NET</label>
+                    <input type="checkbox" id="skill-python" name="skills" value="Python"><label for="skill-python">Python</label>
+                    <input type="checkbox" id="skill-php" name="skills" value="PHP"><label for="skill-php">PHP / Laravel</label>
+                    <input type="checkbox" id="skill-spring" name="skills" value="Spring"><label for="skill-spring">Spring</label>
+                    <input type="checkbox" id="skill-django" name="skills" value="Django"><label for="skill-django">Django</label>
+                    
+                    <input type="checkbox" id="skill-sql" name="skills" value="SQL"><label for="skill-sql">SQL</label>
+                    <input type="checkbox" id="skill-nosql" name="skills" value="NoSQL"><label for="skill-nosql">NoSQL</label>
+                    <input type="checkbox" id="skill-docker" name="skills" value="Docker"><label for="skill-docker">Docker</label>
+                    <input type="checkbox" id="skill-k8s" name="skills" value="Kubernetes"><label for="skill-k8s">Kubernetes</label>
+                    <input type="checkbox" id="skill-aws" name="skills" value="AWS"><label for="skill-aws">AWS</label>
+                    <input type="checkbox" id="skill-azure" name="skills" value="Azure"><label for="skill-azure">Azure</label>
+                    <input type="checkbox" id="skill-gcp" name="skills" value="GCP"><label for="skill-gcp">GCP</label>
+                    
+                    <input type="checkbox" id="skill-git" name="skills" value="Git"><label for="skill-git">Git</label>
+                    <input type="checkbox" id="skill-ci-cd" name="skills" value="CI/CD"><label for="skill-ci-cd">CI/CD</label>
+                    <input type="checkbox" id="skill-testes" name="skills" value="Testes"><label for="skill-testes">Testes</label>
+                    <input type="checkbox" id="skill-linux" name="skills" value="Linux"><label for="skill-linux">Linux</label>
+                </div></br>
+
+                <div class="form-group mt-4">
+                    <label for="outras-tecnologias">Outras Tecnologias Relevantes (separadas por vírgula):</label>
+                    <input type="text" id="outras-tecnologias" name="outras-tecnologias" placeholder="Ex: Power BI, Redis, Terraform">
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>H. Idiomas</h4></legend>
+                <div class="form-group-grid two-cols">
+                    <div class="form-group">
+                        <label for="idioma-1">Idioma 1</label>
+                        <select id="idioma-1" name="idioma-1">
+                            <option value="" selected>Selecione o nível</option>
+                            <option value="ingles">Inglês</option>
+                            <option value="espanhol">Espanhol</option>
+                            <option value="frances">Francês</option>
+                            <option value="alemao">Alemão</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nivel-1">Nível 1</label>
+                        <select id="nivel-1" name="nivel-1">
+                            <option value="" selected>Selecione o nível</option>
+                            <option value="basico">Básico</option>
+                            <option value="intermediario">Intermediário</option>
+                            <option value="avancado">Avançado</option>
+                            <option value="fluente">Fluente</option>
+                        </select>
+                    </div></br>
+                    <div class="form-group">
+                        <label for="idioma-2">Idioma 2</label>
+                        <select id="idioma-2" name="idioma-2">
+                            <option value="" selected>Selecione o nível</option>
+                            <option value="ingles">Inglês</option>
+                            <option value="espanhol">Espanhol</option>
+                            <option value="frances">Francês</option>
+                            <option value="alemao">Alemão</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nivel-2">Nível 2</label>
+                        <select id="nivel-2" name="nivel-2">
+                            <option value="" selected>Selecione o nível</option>
+                            <option value="basico">Básico</option>
+                            <option value="intermediario">Intermediário</option>
+                            <option value="avancado">Avançado</option>
+                            <option value="fluente">Fluente</option>
+                        </select>
+                    </div></br>
+                </div>
+                <button type="button" class="btn-secondary">+ Adicionar Outro Idioma</button>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>I. Preferências & Inclusão</h4></legend>
+
+                <div class="form-group radio-group">
+                    <label>Pessoa com Deficiência (PCD)?</label>
+                    <div class="radio-options">
+                        <input type="radio" id="pcd-sim" required name="pcd" value="sim">
+                        <label for="pcd-sim">Sim</label>
+                        <input type="radio" id="pcd-nao" required name="pcd" value="nao">
+                        <label for="pcd-nao">Não</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="recursos-acessibilidade">Recursos de Acessibilidade Necessários (Se Sim):</label></br>
+                    <textarea id="recursos-acessibilidade" name="recursos-acessibilidade" rows="3" placeholder="Descreva aqui os recursos ou adaptações necessárias."></textarea>
+                </div></br>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="disp-viagens" name="disp-viagens">
+                    <label for="disp-viagens">Disponibilidade para viagens de trabalho.</label>
+                </div></br>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="disp-mudanca" name="disp-mudanca">
+                    <label for="disp-mudanca">Disponibilidade para mudança de cidade/estado.</label>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>J. Consentimentos e Declaração</h4></legend>
+                <p class="section-description">A sua candidatura só poderá ser enviada após a aceitação dos termos obrigatórios.</p>
+            
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consentimento-lgpd" name="consentimento-lgpd" required aria-required="true">
+                    <label for="consentimento-lgpd">
+                         Li e concordo com o Termo de Consentimento para Tratamento de Dados Pessoais (LGPD).
+                    </label>
+                </div><br>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="receber-comunicacoes" name="receber-comunicacoes">
+                    <label for="receber-comunicacoes">Desejo receber comunicações sobre futuras vagas e novidades da empresa (Opcional).</label>
+                </div><br>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="declaracao-veracidade" name="declaracao-veracidade" required aria-required="true">
+                    <label for="declaracao-veracidade">
+                        Declaro que todas as informações fornecidas são verdadeiras e completas.
+                    </label><br>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend><h4>K. Currículo e Documentos (Opcional)</h4></legend>
+                <p class="section-description">Como simulação de upload, solicitamos o link para seu currículo ou outros documentos.</p>
+                <div class="form-group">
+                    <label for="curriculo-link">Link do Currículo (Ex: Google Drive, GitHub PDF, etc.):</label>
+                    <input type="url" id="curriculo-link" name="curriculo-link" placeholder="https://drive.google.com/link-do-seu-curriculo">
+                </div>
+            </fieldset><br>
+
+            
+            <div class="form-actions">
+                <button type="submit" style="
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+">Enviar Candidatura</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; INF18 Cauan, Filipe, Erick, Guilherme.</p>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
