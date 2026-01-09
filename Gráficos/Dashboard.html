@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard da Lojinha</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Dashboard da Lojinha!</h1>
+    </header>
+
+    <main>
+    <!--Cards-->
+        <div class="cards">
+            <div class="card" id="vendas-dia">Vendas no dia: 0</div>
+            <div class="card" id="vendas-mes">Vendas no mês: 0</div>
+            <div class="card" id="clientes-ativos">Clientes ativos: 0</div>
+        </div>
+
+     <!--Gráfico-->
+        <section id="graficos">
+            <h2>Gráficos de Desempenho</h2>
+            <div class="chart">
+                <div class="bar" id="semana1">Semana 1</div>
+                <div class="bar" id="semana2">Semana 2</div>
+                <div class="bar" id="semana3">Semana 3</div>
+                <div class="bar" id="semana4">Semana 4</div>
+            </div>
+            <button onclick="atualizarDados()">Atualizar Dados</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html

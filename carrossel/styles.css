@@ -1,0 +1,44 @@
+.carrossel {
+  position: relative;
+  width: 1100px;
+  height: 619px;
+  overflow: hidden;
+  margin: auto;      
+  
+}
+
+.carrossel img {
+  object-fit: cover;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carrossel img.ativo {
+  opacity: 1;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.controls button {
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+body {
+  background-color: #20f0ff;
+} 
