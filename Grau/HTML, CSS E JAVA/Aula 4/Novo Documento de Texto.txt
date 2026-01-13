@@ -1,0 +1,142 @@
+<label>Escolaridade</label>
+    <select required>
+        <option value="">Selecione</option>
+        <option value="ensino-medio">Ensino Médio</option>
+        <option value="ensino-superior">Ensino Superior</option>
+        <option value="pos-graduacao">Pós-Graduação</option>
+        <option value="mestrado">Mestrado</option>
+        <option value="doutorado">Doutorado</option><br/><br/>
+    </select><br/><br/>
+Atividade — Formulário de Candidatura Profissional (Vaga de TI)
+Objetivo
+
+Construir uma página web completa que simule, com realismo, um formulário de candidatura para uma vaga de TI. O foco é aplicar HTML semântico, CSS organizado, boas práticas de UX/Acessibilidade e validação básica em JavaScript.
+
+Entregáveis (obrigatórios)
+
+index.html
+
+style.css
+
+script.js
+
+Observação: Não usar frameworks (Bootstrap, jQuery etc.). Apenas HTML5, CSS3 e JavaScript puro.
+
+Cenário
+
+Você é responsável por criar o formulário oficial de uma empresa de tecnologia para receber candidaturas. O formulário deve ser completo, claro, acessível e responsivo (mobile-first).
+
+Requisitos funcionais
+1) Estrutura semântica
+
+Utilize <form> com action="#" (simulação) e method="post".
+
+Agrupe seções usando <fieldset> e <legend> (obrigatório).
+
+Use <label for> corretamente associado a cada controle.
+
+Use inputs com tipos adequados: text, email, tel, url, date, number, radio, checkbox, além de select e textarea.
+
+Inclua placeholder descritivo quando fizer sentido (sem substituir o label).
+
+Forneça name e id coerentes para todos os campos (padrão kebab-case ou snake_case).
+
+2) Conteúdo do formulário (máximo de campos possíveis, mas organizado)
+
+Crie seções com fieldset/legend contendo, no mínimo, os campos abaixo:
+
+A. Dados Pessoais
+
+Nome completo (text, obrigatório)
+
+Data de nascimento (date)
+
+CPF (ou Documento) (text)
+
+Gênero (opções radio)
+
+Endereço: Logradouro, Número, Complemento, Bairro, Cidade, UF (select com 27 UFs), CEP (text)
+
+B. Contato
+
+E-mail (email, obrigatório)
+
+Telefone celular (tel, obrigatório)
+
+Telefone fixo (tel)
+
+Preferência de contato (radio: e-mail, celular, WhatsApp)
+
+C. Perfis & Portfólio
+
+LinkedIn (url)
+
+GitHub/GitLab (url)
+
+Portfólio/Site (url)
+
+D. Vaga & Disponibilidade
+
+Cargo pretendido (select: Dev Front-end, Back-end, Full-stack, QA, DevOps, Data/ML, UX/UI, Suporte, Estágio, etc.)
+
+Senioridade (select: Júnior, Pleno, Sênior)
+
+Modelo de trabalho (radio: Remoto, Híbrido, Presencial)
+
+Jornada (checkbox: 40h, 30h, Freelancer/Projeto)
+
+Disponibilidade para início (date)
+
+Pretensão salarial (number, com min e step, ex.: step="100")
+
+E. Formação Acadêmica
+
+Nível (select: Técnico, Tecnólogo, Bacharelado, Pós, Mestrado, Doutorado, Em andamento/Concluído)
+
+Curso (text)
+
+Instituição (text)
+
+Ano de conclusão (number)
+
+F. Experiência Profissional
+
+Última empresa (text)
+
+Cargo (text)
+
+Período (date início / date fim) + checkbox “Emprego atual”
+
+Principais responsabilidades (textarea)
+
+G. Competências Técnicas (Hard Skills)
+
+Checkboxes para stacks (HTML, CSS, JS/TS, React, Angular, Vue, Node.js, Java, C#, Python, PHP, .NET, Spring, Django, Flask, Laravel, SQL, NoSQL, Docker, Kubernetes, AWS, Azure, GCP, Linux, Git, CI/CD, Testes, Power BI, etc.)
+
+Campo text “Outras tecnologias”
+
+H. Idiomas
+
+Idioma (select) + Nível (select: Básico/Intermediário/Avançado/Fluente) com opção de adicionar mais (pelo menos 2 conjuntos de campos)
+
+I. Preferências & Inclusão
+
+PCD? (radio sim/não) + textarea para recursos de acessibilidade necessários
+
+Disponibilidade para viagens (checkbox)
+
+Disponibilidade para mudar de cidade (checkbox)
+
+J. Consentimentos
+
+LGPD: checkbox obrigatório confirmando consentimento para tratamento de dados
+
+Receber comunicações da empresa (checkbox opcional)
+
+Declaração de veracidade das informações (checkbox obrigatório)
+
+K. Uploads (opcional)
+
+Simular campo de upload (somente layout/UX), sem necessidade de envio real (ex.: link para currículo no Drive/GitHub).
+
+Você pode adicionar campos extras que façam sentido (ex.: carta de apresentação, expectativa de crescimento, disponibilidade de horário, links de artigos/publicações).

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário Simples</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form>
+        <label>Nome:</label>
+        <input type="text" name="nome"><br><br>
+        <label>E-mail:</label>
+        <input type="email" name="email'><br><br>
+        <button type="submit">Enviar</button>
+     
+     <h1>Imagem estilizada</h1>
+     <img src="D:\Grau\HTML, CSS E JAVA\Aula 1\tecnologia.jpeg"
+     alt="Imagem de Exemplo"
+     style="border:3px solid #000;
+     width:250px;">
+
+     <h1>Tabela de Alunos</h1>
+     <table border="1">
+         <tr>
+             
+             <th>Nome</th>
+             <th>Idade</th>
+             <th>Turma</th>  
+         </tr>
+         <tr>
+     <td>Filipe</td>
+               <td>17</td>
+               <td>301</td>
+            </tr>
+            <tr>
+                 <td>Ana</td>
+                 <td>18</td>
+                 <td>302</td>
+            </tr>
+            <tr>
+                  <td>Pedro</td>
+                  <td>16</td>
+                  <td>303</td>
+            </tr>
+          </table>
+    <p><a href="https://www.tudogostoso.com.br" target="_blank">Visite a delicia</a></p>
+
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop for men</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    <img src="D:\Grau\HTML, CSS E JAVA 2\Aula 1\barbearia\banner.png.png"
+        alt ="banner"
+        style="border: 3px solid #000;
+        width:1220px;
+        height:400px;
+        "><br><br>
+    </header>
+
+    <nav>
+        <ul class="nav-flex">
+        <a href="#hero"><strong>Início</strong></a>
+        <a href="#sobrenos"><strong>Sobre Nós</strong></a>
+        <a href="#contato"><strong>Agendar Horário</strong></a>
+        </ul>
+    </nav><br><br>
+
+<main>
+    <section id="hero">
+        <img src="D:\Grau\HTML, CSS E JAVA 2\Aula 1\barbearia\hero.png"
+        alt ="hero"
+        style="border: 3px solid #000;
+        width:1225px;
+        height:500px;"><br><br>
+    </section><br>
+
+    <section id="sobrenos">
+        <h2><strong>Sobre nós</strong></h2>
+        <p>Oferecemos os melhores serviços de barbearia para homens que buscam estilo e cuidado pessoal. Nossos barbeiros são experientes e dedicados a proporcionar uma experiência única.</p>
+        <ul>
+            <li><strong>Corte de Cabelo:</strong> Estilos modernos e clássicos para todos os gostos.</li><br>
+            <li><strong>Barba:</strong> Aparar, modelar e cuidar da sua barba com precisão.</li><br>
+            <li><strong>Tratamentos Capilares:</strong> Cuidados especiais para manter seu cabelo saudável.</li><br>
+            <li><strong>Massagem Facial:</strong> Relaxamento e revitalização para a pele do rosto.</li><br>
+        </ul>
+    </section><br>
+
+    <section id="contato">
+    <h2><strong>Agende seu Horário</strong></h2>
+     <form>
+       <label>Nome:</label>
+       <input type="text" id="nome" required placeholder="Nome Completo"><br><br>
+       <label>Email:</label>
+       <input type="email" id="email" required placeholder="EX: seu@nome.com"><br><br>
+       <label>Telefone:</label>
+       <input type="tel" required placeholder="EX:(00)00000-0000"><br><br>
+       <label>Data do Agendamento:</label>
+       <input type="date" required><br><br>
+       <label>Serviço Desejado:</label>
+       <select>
+        <option value="corte">Corte de Cabelo</option>
+        <option value="barba">Barba</option>
+        <option value="tratamento">Tratamentos Capilares</option>
+        <option value="massagem">Massagem Facial</option>
+       </select><br><br>
+       <button type="submit">Agendar</button>
+       <p id="mensagem"></p>
+       </form>
+    </section>
+
+    <footer>
+        <p><strong>© 2025 PetShopForMen. Todos os direitos reservados.</strong></p>
+    </footer>
+
+</main>
+</body>
+<script src="script.js"></script>
+</html>

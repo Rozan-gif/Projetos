@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><tittle>Página
+Exemplo</tittle></head>
+<body>
+<h1>Olá Mundo!</h1>
+<h2>Vou me comprometer com a disciplina!</h2>
+<h3>Vou me tornar um dos maiores programadores do Grau!</h3>
+<h4>O mundo da tecnologia é cheio de oportunidades</h4>
+<h5>O salário que almejo no meio da tecnologia é de 20k!</h5>
+<h6>O futuro é brilhante</h6>
+<p>Minha primeira página HTML.</p>
+</body>
+</html>

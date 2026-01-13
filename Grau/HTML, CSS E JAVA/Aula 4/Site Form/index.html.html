@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head><h1>Formulário de Ti</h1>
+    <title>Formulário de TI</title>
+    <link rel="stylesheet" href="Estilo.css">
+    </head>
+    <body>
+        <form action="#" method="post" id="form-ti">
+            <fieldset>
+            <legend>Dados Pessoais</legend>
+        <label for="">Nome Completo</label>
+        <input type="text" required placeholder="Seu Nome Aqui"><br><br>
+        <label for="">Data de Nascimento</label>
+        <input type="date" required><br><br>
+        <label for="">Cpf</label>
+        <input type="text" required placeholder="000.000.000-00"><br><br>
+        <label for="">Genero</label><br><br>
+        <input type="radio" name="genero" value="masculino" required>Masculino
+        <input type="radio" name="genero" value="feminino" required>Feminino
+        <input type="radio" name="genero" value="Não Binario" required>Não Binario<br><br>
+        <label for="">Endereço</label>
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" name="logradouro" size="30" required>
+
+        <label for="numero">Número:</label>
+        <input type="text" id="numero" name="numero" size="5" required>
+
+        <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento" size="15">
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" name="bairro" size="20" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" size="20" required><br><br>
+
+        <label for="uf">UF:</label>
+        <select id="uf" name="uf" required>
+    <option value="">Selecione a UF</option>
+    <option value="AC">Acre (AC)</option>
+    <option value="AL">Alagoas (AL)</option>
+    <option value="AP">Amapá (AP)</option>
+    <option value="AM">Amazonas (AM)</option>
+    <option value="BA">Bahia (BA)</option>
+    <option value="CE">Ceará (CE)</option>
+    <option value="DF">Distrito Federal (DF)</option>
+    <option value="ES">Espírito Santo (ES)</option>
+    <option value="GO">Goiás (GO)</option>
+    <option value="MA">Maranhão (MA)</option>
+    <option value="MT">Mato Grosso (MT)</option>
+    <option value="MS">Mato Grosso do Sul (MS)</option>
+    <option value="MG">Minas Gerais (MG)</option>
+    <option value="PA">Pará (PA)</option>
+    <option value="PB">Paraíba (PB)</option>
+    <option value="PR">Paraná (PR)</option>
+    <option value="PE">Pernambuco (PE)</option>
+    <option value="PI">Piauí (PI)</option>
+    <option value="RJ">Rio de Janeiro (RJ)</option>
+    <option value="RN">Rio Grande do Norte (RN)</option>
+    <option value="RS">Rio Grande do Sul (RS)</option>
+    <option value="RO">Rondônia (RO)</option>
+    <option value="RR">Roraima (RR)</option>
+    <option value="SC">Santa Catarina (SC)</option>
+    <option value="SP">São Paulo (SP)</option>
+    <option value="SE">Sergipe (SE)</option>
+    <option value="TO">Tocantins (TO)</option>
+</select>
+
+<label for="cep">CEP:</label>
+<input type="text" id="cep" name="cep" size="10" maxlength="9" placeholder="Ex: 00000-000" required>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Email</label>
+            <input type="email" required placeholder="Seu Email Aqui"><br><br>
+            <label for="">Telefone Celular</label>
+            <input type="tel" required placeholder="(00) 00000-0000"><br><br>
+            <label for="">Telefone Fixo</label>
+            <input type="tel" placeholder="(00) 0000-0000"><br><br>
+            <label for="">Preferencias de Contato</label>
+            <input type="radio" name="contato" value="email" required>Email
+            <input type="radio" name="contato" value="celular" required>Celular
+            <input type="radio" name="contato" value="Whatsapp" required>Whatsapp<br><br>
+        </fieldset><br><br>
+        <fieldset>
+            <legend>Perfis & Portfólios</legend>
+            <label for="">Linkedin</label>
+            <input type="url" placeholder="Link do seu Linkedin"><br><br>
+            <label for="">GitHub/Gitlab</label>
+            <input type="url" placeholder="Link do seu GitHub/Gitlab"><br><br>
+            <label for="">Portfólio/Site</label>
+            <input type="url" placeholder="Link do seu Portfólio/Site"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Vaga & Disponibilidade</legend>
+            <label for="">Cargo Pretendido</label>
+            <select required>
+                <option value="">Selecione seu Cargo</option>
+                <option value="Dev Front-End">Dev Front-End</option>
+                <option value="Dev Back-End">Dev Back-End</option>
+                <option value="Dev Full-Stack">Dev Full-Stack</option>
+                <option value="QA">QA</option>
+                <option value="DevOps">DevOps</option>
+                <option value="Data/ML">Data/ML</option>
+                <option value="UX/UI">UX/UI</option>
+                <option value="Suporte Técnico">Suporte Técnico</option>
+                <option value="Estágio TI">Estágio TI</option>
+            </select><br><br>
+            <label for="">Senioridade</label>
+            <select required>
+                <option value="">Selecione sua Senioridade</option>
+                <option value="Júnior">Júnior</option>
+                <option value="Pleno">Pleno</option>
+                <option value="Sênior">Sênior</option>
+                <option value="Especialista">Especialista</option>
+                <option value="Líder Técnico">Líder Técnico</option>
+            </select><br><br>
+            <label for="jornada">Jornada</label><br>
+            <input type="checkbox" id="jornada-40" name="jornada[]" value="40h">
+            <label for="jornada-40">40h</label>
+            <input type="checkbox" id="jornada-30" name="jornada[]" value="30h">
+            <label for="jornada-30">30h</label>
+            <input type="checkbox" id="jornada-freelancer" name="jornada[]" value="Freelancer/Projeto">
+            <label for="jornada-freelancer">Freelancer/Projeto</label><br><br>
+            <label for="">Disponibilidade para Início</label>
+            <input type="date" required><br><br>
+            <label for="">Pretensão Salarial</label>
+                        <label for="pretensao">Pretensão Salarial (R$)</label>
+            <input type="number" id="pretensao" name="pretensao" min="0" step="0.01" value="0.00" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Formação Academica</legend>
+            <label for="">Nível de Formação</label>
+            <select required>
+                <option value="">Selecione seu Nível de Formação</option>
+                <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+                <option value="Técnico">Técnico</option>
+                <option value="Graduação">Graduação</option>
+                <option value="Pós-Graduação">Pós-Graduação</option>
+                <option value="Mestrado">Mestrado</option>
+                <option value="Doutorado">Doutorado</option>
+            </select><br><br>
+            <label for="">Curso</label>
+            <input type="text" required placeholder="Seu Curso Aqui"><br><br>
+            <label for="">Instituição</label>
+            <input type="text" required placeholder="Sua Instituição Aqui"><br><br>
+            <label for="">Ano de Conclusão</label>
+            <input type="number" required placeholder="Ano de Conclusão"><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Experiência Profissional</legend>
+            <label for="">Último Emprego</label>
+            <input type="text" required placeholder="Seu Último Emprego Aqui"><br><br>
+            <label for="">Cargo</label>
+            <input type="text" required placeholder="Seu Cargo Aqui"><br><br>
+            <label for="">Período</label>
+            <input type="date" id="data-inicio" name="data-inicio" required> até 
+            <input type="date" id="data-fim" name="data-fim">
+            <input type="checkbox" id="emprego-atual" name="emprego-atual" value="atual">
+            <label for="emprego-atual">Emprego atual</label><br><br>
+            <label for="">Principais Atividades</label><br>
+            <textarea rows="4" cols="50" placeholder="Descreva suas principais atividades aqui..." required></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Competencias Técnicas</legend>
+            <label for="">Stacks</label><br>
+                <input type="checkbox" id="html" name="stacks[]" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="stacks[]" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js-ts" name="stacks[]" value="JavaScript/TypeScript">
+                <label for="js-ts">JavaScript/TypeScript</label>
+                <input type="checkbox" id="react" name="stacks[]" value="React">
+                <label for="react">React</label>
+                <input type="checkbox" id="angular" name="stacks[]" value="Angular">
+                <label for="angular">Angular</label>
+                <input type="checkbox" id="vue" name="stacks[]" value="Vue">
+                <label for="vue">Vue</label>
+                <input type="checkbox" id="nodejs" name="stacks[]" value="Node.js">
+                <label for="nodejs">Node.js</label>
+                <input type="checkbox" id="java" name="stacks[]" value="Java">
+                <label for="java">Java</label>
+                <input type="checkbox" id="csharp" name="stacks[]" value="C#">
+                <label for="csharp">C#</label>
+                <input type="checkbox" id="python" name="stacks[]" value="Python">
+                <label for="python">Python</label>
+                <input type="checkbox" id="php" name="stacks[]" value="PHP">
+                <label for="php">PHP</label>
+                <input type="checkbox" id="dotnet" name="stacks[]" value=".NET">
+                <label for="dotnet">.NET</label>
+                <input type="checkbox" id="spring" name="stacks[]" value="Spring">
+                <label for="spring">Spring</label>
+                <input type="checkbox" id="django" name="stacks[]" value="Django">
+                <label for="django">Django</label>
+                <input type="checkbox" id="flask" name="stacks[]" value="Flask">
+                <label for="flask">Flask</label>
+                <input type="checkbox" id="laravel" name="stacks[]" value="Laravel">
+                <label for="laravel">Laravel</label>
+                <input type="checkbox" id="sql" name="stacks[]" value="SQL">
+                <label for="sql">SQL</label>
+                <input type="checkbox" id="nosql" name="stacks[]" value="NoSQL">
+                <label for="nosql">NoSQL</label>
+                <input type="checkbox" id="docker" name="stacks[]" value="Docker">
+                <label for="docker">Docker</label>
+                <input type="checkbox" id="kubernetes" name="stacks[]" value="Kubernetes">
+                <label for="kubernetes">Kubernetes</label>
+                <input type="checkbox" id="aws" name="stacks[]" value="AWS">
+                <label for="aws">AWS</label>
+                <input type="checkbox" id="azure" name="stacks[]" value="Azure">
+                <label for="azure">Azure</label>
+                <input type="checkbox" id="gcp" name="stacks[]" value="GCP">
+                <label for="gcp">GCP</label>
+                <input type="checkbox" id="linux" name="stacks[]" value="Linux">
+                <label for="linux">Linux</label>
+                <input type="checkbox" id="git" name="stacks[]" value="Git">
+                <label for="git">Git</label>
+                <input type="checkbox" id="ci-cd" name="stacks[]" value="CI/CD">
+                <label for="ci-cd">CI/CD</label>
+                <input type="checkbox" id="testes" name="stacks[]" value="Testes">
+                <label for="testes">Testes</label>
+                <input type="checkbox" id="power-bi" name="stacks[]" value="Power BI">
+                <label for="power-bi">Power BI</label><br><br>
+                <label for="outras-tecnologias">Outras tecnologias</label><br>
+                <input type="text" id="outras-tecnologias" name="outras-tecnologias" placeholder="Digite outras tecnologias aqui..."><br><br>
+            </fieldset><br><br>
+            <fieldset>
+                <legend>Idiomas</legend>
+                    <div class="idioma-container">
+                        <div class="idioma-grupo">
+                            <label for="idioma-1">Idioma</label>
+                            <select id="idioma-1" name="idiomas[]" required>
+                                <option value="">Selecione um idioma</option>
+                                <option value="Inglês">Inglês</option>
+                                <option value="Espanhol">Espanhol</option>
+                                <option value="Francês">Francês</option>
+                                <option value="Alemão">Alemão</option>
+                                <option value="Italiano">Italiano</option>
+                                <option value="Mandarim">Mandarim</option>
+                                <option value="Japonês">Japonês</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                
+                            <label for="nivel-1">Nível</label>
+                            <select id="nivel-1" name="niveis[]" required>
+                                <option value="">Selecione o nível</option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                                <option value="Fluente">Fluente</option>
+                            </select>
+                        </div>
+                        <div class="idioma-grupo">
+                            <label for="idioma-2">Idioma</label>
+                            <select id="idioma-2" name="idiomas[]" required>
+                                <option value="">Selecione um idioma</option>
+                                <option value="Inglês">Inglês</option>
+                                <option value="Espanhol">Espanhol</option>
+                                <option value="Francês">Francês</option>
+                                <option value="Alemão">Alemão</option>
+                                <option value="Italiano">Italiano</option>
+                                <option value="Mandarim">Mandarim</option>
+                                <option value="Japonês">Japonês</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                
+                            <label for="nivel-2">Nível</label>
+                            <select id="nivel-2" name="niveis[]" required>
+                                <option value="">Selecione o nível</option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermediário">Intermediário</option>
+                                <option value="Avançado">Avançado</option>
+                                <option value="Fluente">Fluente</option>
+                            </select>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Preferencias Adicionais</legend>
+                    <label for="pcd">PCD (Pessoa com Deficiência):</label><br>
+                    <input type="radio" id="pcd-sim" name="pcd" value="sim" required>
+                    <label for="pcd-sim">Sim</label>
+                    <input type="radio" id="pcd-nao" name="pcd" value="nao" required>
+                    <label for="pcd-nao">Não</label><br><br>
+                    <label for="acessibilidade">Recursos de acessibilidade necessários:</label><br>
+                    <textarea id="acessibilidade" name="acessibilidade" rows="4" cols="50" placeholder="Descreva os recursos necessários..." required></textarea><br><br>
+                    <input type="checkbox" id="viagens" name="disponibilidade[]" value="viagens">
+                    <label for="viagens">Disponibilidade para viagens</label><br>
+                    <input type="checkbox" id="mudar-cidade" name="disponibilidade[]" value="mudar-cidade">
+                    <label for="mudar-cidade">Disponibilidade para mudar de cidade</label><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Consentimentos</legend>
+                    <input type="checkbox" id="lgpd-consent" name="lgpd-consent" value="consent" required>
+                    <label for="lgpd-consent">Confirmo que li e concordo com o tratamento dos meus dados pessoais conforme a LGPD.</label><br><br>
+                    <input type="checkbox" id="comunicacoes" name="comunicacoes" value="sim">
+                    <label for="comunicacoes">Desejo receber comunicações da empresa.</label><br><br>
+                    <input type="checkbox" id="veracidade" name="veracidade" value="confirm" required>
+                    <label for="veracidade">Declaro que todas as informações fornecidas são verdadeiras e de minha responsabilidade.</label><br><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Uploads e Informações Adicionais</legend>
+                    <label for="curriculo">Currículo (link para Drive/GitHub):</label><br>
+                    <input type="url" id="curriculo" name="curriculo" placeholder="Insira o link do seu currículo" required><br><br>
+                    <label for="carta-apresentacao">Carta de Apresentação:</label><br>
+                    <textarea id="carta-apresentacao" name="carta-apresentacao" rows="4" cols="50" placeholder="Escreva sua carta de apresentação aqui..."></textarea><br><br>
+                    <label for="expectativa-crescimento">Expectativa de Crescimento:</label><br>
+                    <textarea id="expectativa-crescimento" name="expectativa-crescimento" rows="4" cols="50" placeholder="Descreva suas expectativas de crescimento na empresa..."></textarea><br><br>
+                    <label for="disponibilidade-horario">Disponibilidade de Horário:</label><br>
+                    <input type="text" id="disponibilidade-horario" name="disponibilidade-horario" placeholder="Ex.: Segunda a Sexta, 8h às 18h"><br><br>
+                    <label for="artigos-publicacoes">Links de Artigos/Publicações:</label><br>
+                    <input type="url" id="artigos-publicacoes" name="artigos-publicacoes" placeholder="Insira o link de um artigo ou publicação (opcional)"><br><br>
+                </fieldset>
+       <button type="submit" style="
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 20px;
+">Enviar Candidatura</button>
+        </form>
+    </body>
+</html>
