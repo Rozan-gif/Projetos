@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Lista de Tarefas</h1>
+  <div id="container">
+    <input type="text" id="tarefaInput" placeholder="Digite uma tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+
+    <ul id="listaTarefas"></ul>
+  </div>
+
+  <script>
+    function adicionarTarefa() {
+      const input = document.getElementById('tarefaInput');
+      const texto = input.value.trim();
+
+      if (texto !== "") {
+        const li = document.createElement('li');
+        li.textContent = texto;
+        document.getElementById('listaTarefas').appendChild(li);
+        input.value = "";
+      } else {
+        alert("Digite uma tarefa antes de adicionar!");
+      }
+    }
+  </script>
+</body>
+</html>
